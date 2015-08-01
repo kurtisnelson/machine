@@ -22,18 +22,12 @@ recipes:
 # development (rails)
 - sprout-rbenv
 - sprout-ruby
-- sprout-mysql
 - sprout-postgresql
 
 # apps
 - sprout-osx-apps::iterm2
-- sprout-osx-apps::flycut
-- sprout-osx-apps::shiftit
-
 # apps (editors)
-- sprout-osx-apps::textmate_preferences
 - sprout-osx-apps::macvim
-- sprout-jetbrains-editors::rubymine
 
 node_attributes:
   sprout:
@@ -81,6 +75,13 @@ node_attributes:
         - wget
         - rbenv-binstubs
         - rbenv-gem-rehash
+        - android-sdk
+        - go
+        - redis
+        - htop-osx
+        - hub
+        - macvim
+        - ruby-build
       casks:
         - ccmenu
         - firefox
@@ -95,3 +96,5 @@ node_attributes:
         - virtualbox
         - xquartz
         - xscope
+        - genymotion
+        - ngrok
